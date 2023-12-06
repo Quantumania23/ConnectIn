@@ -1,32 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LinkedIn-Clone</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- navbar -->
 
     <nav class="navbar">
-        <div class="navbar-left">
-            <a href="index.html" class="logo"><img src="images/logo.png"></a>
+      <div class="navbar-left">
+        <a href="index.html" class="logo"><img src="images/logo.png" /></a>
+
+        <div class="search-box">
+          <img src="images/search.png" />
+          <input type="text" placeholder="Search" />
         </div>
-        <div class="navbar-center">
-            <ul>
-                <li><a href="#"><img src="images/home.png"><span>Home</span></a></li>
-                <li><a href="#"><img src="images/network.png"><span>My Network</span></a></li>
-                <li><a href="#"><img src="images/jobs.png"><span>Jobs</span></a></li>
-                <li><a href="#"><img src="images/message.png"><span>Messages</span></a></li>
-                <li><a href="#"><img src="images/notification.png"><span>Notifications</span></a></li>
-            </ul>
+      </div>
+      <div class="navbar-center">
+        <ul>
+          <li>
+            <a href="#" class="active-link"
+              ><img src="images/home.png" /><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/network.png" /><span>My Network</span></a
+            >
+          </li>
+          <li>
+            <a href="#"><img src="images/jobs.png" /><span>Jobs</span></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/message.png" /><span>Messages</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/notification.png" /><span
+                >Notifications</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="online">
+          <img src="images/user-1.png" class="nav-profile-img" />
         </div>
-        <div class="navbar-right">
-            <img src="images//user-1.png" class="nav-profile-img">
-        </div>
+      </div>
     </nav>
+    <!-- end of the navbar -->
 
+    <div class="container">
+      <!-- left sidebar -->
+      <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+          <img src="images/cover-pic.png" width="100%" />
+          <div class="sidebar-profile-info">
+            <img src="images/user-1.png" />
+            <h1>Mike Peace</h1>
+            <h3>Front end Developer</h3>
+            <ul>
+              <li>Your profile Views <span>63</span></li>
+              <li>Your post views <span>32</span></li>
+              <li>Your connections <span>669</span></li>
+            </ul>
+          </div>
+          <div class="sidebar-profile-link">
+            <a href="#"><img src="images/items.png" />My Items</a>
+            <a href="#"><img src="images/premium.png" />Try Premium</a>
+          </div>
+        </div>
 
-</body>
+        <div class="sidebar-activity">
+          <h3>RECENT</h3>
+          <a href="#"><img src="images/recent.png" />Web Development</a>
+          <a href="#"><img src="images/recent.png" />user Interface</a>
+          <a href="#"><img src="images/recent.png" />Online Learning</a>
+          <a href="#"><img src="images/recent.png" />Learn Online</a>
+          <a href="#"><img src="images/recent.png" />Code better</a>
+          <a href="#"><img src="images/recent.png" />Teamwork</a>
+          <h3>GROUPS</h3>
+          <a href="#"><img src="images/group.png">Web Design Group</a>
+          <a href="#"><img src="images/group.png">ReactJs & NextJs Learners</a>
+          <a href="#"><img src="images/group.png">Javascript & Python</a>
+          <a href="#"><img src="images/group.png">Learn Code online</a>
+          <h3>HASHTAG</h3>
+          <a href="#"><img src="images/hashtag.png">Web Development</a>
+          <a href="#"><img src="images/hashtag.png">Machine learning</a>
+          <a href="#"><img src="images/hashtag.png">3D and 3js</a>
+          <div class="discover-more-link">
+            <a href="#">Discover more</a>
+          </div>
+        </div>
+      </div>
+      <!-- main content -->
+      <div class="main-content"></div>
+      <!-- right sidebar -->
+      <div class="right-sidebar">
+        <div class="sidebar-news">
+          <img src="images/more.png" class="info-icon">
+          <h1>Trending News</h1>
+          <a href="#">High demand for skilled manpower</a>
+          <span>11h ago &middot; 10,935 readers</span>
+
+          <a href="#">Carrers growing horizontally too</a>
+          <span>1d ago &middot; 1,735 readers</span>
+
+          <a href="#">Less work for visa for US, more for UK</a>
+          <span>2h ago &middot; 8,935 readers</span>
+
+          <a href="#">More hiring = higher confidence?</a>
+          <span>22h ago &middot; 23,935 readers</span>
+
+          <a href="#">Gautam Adani is the world's third richest man</a>
+          <span>34h ago &middot; 19,935 readers</span>
+
+          <a href="#">Israel attacks Hamas</a>
+          <span>3d ago &middot; 809,935 readers</span>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
