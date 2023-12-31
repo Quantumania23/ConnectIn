@@ -49,7 +49,46 @@
       </div>
       <div class="navbar-right">
         <div class="online">
-          <img src="images/user-1.png" class="nav-profile-img" />
+          <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()"/>
+        </div>
+      </div>
+
+      <!-- profile dropdown menu -->
+      <div class="profile-menu-wrap" id="profileMenu">
+        <div class="profile-menu">
+          <div class="user-info">
+            <img src="images/user-1.png">
+            <div>
+              <h3>Mike Peace</h3>
+              <a href="profile.html">See your profile</a>
+            </div>
+          </div>
+          <hr>
+          <a href="#" class="profile-menu-link">
+            <img src="images/feedback.png">
+            <p>Give Feedback</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/setting.png">
+            <p>Settings & Privacy</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/help.png">
+            <p>Help & support</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/display.png">
+            <p>Display & Accessibility</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/logout.png">
+            <p>Logout</p>
+            <span>></span>
+          </a>
         </div>
       </div>
     </nav>
@@ -76,7 +115,7 @@
           </div>
         </div>
 
-        <div class="sidebar-activity">
+        <div class="sidebar-activity" id="sidebarActivity">
           <h3>RECENT</h3>
           <a href="#"><img src="images/recent.png" />Web Development</a>
           <a href="#"><img src="images/recent.png" />user Interface</a>
@@ -97,9 +136,232 @@
             <a href="#">Discover more</a>
           </div>
         </div>
+
+        <p id="showMoreLink" onclick="togglActivity()">Show more <b>+</b></p>
       </div>
       <!-- main content -->
-      <div class="main-content"></div>
+      <div class="main-content">
+
+        <div class="create-post">
+          <div class="create-post-input">
+            <img src="images/user-1.png">
+            <textarea rows="2" placeholder="Write a post"></textarea>
+          </div>
+          <div class="create-post-links">
+            <li><img src="images/photo.png">Photo</li>
+            <li><img src="images/video.png">Video</li>
+            <li><img src="images/event.png">Event</li>
+            <li>Post</li>
+
+          </div>
+        </div>
+        <div class="sort-by">
+          <hr>
+          <p>Sort by: <span>top <img src="images/down-arrow.png"></span></p>
+        </div>
+
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user-3.png">
+            <div>
+              <h1>Yumi Yang</h1>
+              <small>Founder and CEO at Santa Monica Studio | Gallelio Group</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>The success of every websites depends on search engine optimisation and digital marketing strategy.
+            If you are on the first page of all major search engines
+            then you are ahead among your competitors.
+          </p>
+          <img src="images/post-image-1.png" width="100%">
+
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png">
+              <img src="images/love.png">
+              <img src="images/clap.png">
+              <span class="liked-users">Leonardo Di Scenzio and 75 others</span>
+            </div>
+            <div>
+              <span>22 comments &middot; 40 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="images/user-1.png" class="post-activity-user-icon">
+              <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+            </div>
+            <div class="post-activity-link">
+              <img src="images/like.png">
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png">
+              <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png">
+              <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png">
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user-4.png">
+            <div>
+              <h1>Clarence Kent</h1>
+              <small>Founder and CEO at Santa Monica Studio | Gallelio Group</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>The success of every websites depends on search engine optimisation and digital marketing strategy.
+            If you are on the first page of all major search engines
+            then you are ahead among your competitors.
+          </p>
+          <img src="images/post-image-2.png" width="100%">
+
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png">
+              <img src="images/love.png">
+              <img src="images/clap.png">
+              <span class="liked-users">Leonardo Di Scenzio and 75 others</span>
+            </div>
+            <div>
+              <span>22 comments &middot; 40 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="images/user-1.png" class="post-activity-user-icon">
+              <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+            </div>
+            <div class="post-activity-link">
+              <img src="images/like.png">
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png">
+              <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png">
+              <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png">
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user-5.png">
+            <div>
+              <h1>Gottlieb Daimler</h1>
+              <small>Founder and CEO at Santa Monica Studio | Gallelio Group</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>The success of every websites depends on search engine optimisation and digital marketing strategy.
+            If you are on the first page of all major search engines
+            then you are ahead among your competitors.
+          </p>
+          <img src="images/post-image-3.png" width="100%">
+
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png">
+              <img src="images/love.png">
+              <img src="images/clap.png">
+              <span class="liked-users">Leonardo Di Scenzio and 75 others</span>
+            </div>
+            <div>
+              <span>22 comments &middot; 40 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="images/user-1.png" class="post-activity-user-icon">
+              <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+            </div>
+            <div class="post-activity-link">
+              <img src="images/like.png">
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png">
+              <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png">
+              <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png">
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user-2.png">
+            <div>
+              <h1>Laverne Thomas</h1>
+              <small>Founder and CEO at Santa Monica Studio | Gallelio Group</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>The success of every websites depends on search engine optimisation and digital marketing strategy.
+            If you are on the first page of all major search engines
+            then you are ahead among your competitors.
+          </p>
+          <img src="images/post-image-4.png" width="100%">
+
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png">
+              <img src="images/love.png">
+              <img src="images/clap.png">
+              <span class="liked-users">Leonardo Di Scenzio and 75 others</span>
+            </div>
+            <div>
+              <span>22 comments &middot; 40 shares</span>
+            </div>
+          </div>
+          <div class="post-activity">
+            <div>
+              <img src="images/user-1.png" class="post-activity-user-icon">
+              <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+            </div>
+            <div class="post-activity-link">
+              <img src="images/like.png">
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png">
+              <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png">
+              <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png">
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
       <!-- right sidebar -->
       <div class="right-sidebar">
         <div class="sidebar-news">
@@ -122,8 +384,59 @@
 
           <a href="#">Israel attacks Hamas</a>
           <span>3d ago &middot; 809,935 readers</span>
+
+          <a href="#" class="read-more-link">Read More</a>
+        </div>
+
+        <div class="sidebar-ad">
+          <small>Ad &middot; &middot; &middot;</small>
+          <p>Master the 5 principles of web design</p>
+          <div>
+            <img src="images/user-1.png">
+            <img src="images/mi-logo.png">
+          </div>
+          <b>Brand and Demand in Xiaomi</b>
+          <a href="#" class="ad-link">Learn More</a>
+        </div>
+
+        <div class="sidebar-useful-links">
+          <a href="#">About</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Help Center</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Advertising</a>
+          <a href="#">Get the app</a>
+          <a href="#">More</a>
+
+          <div class="copyright-msg">
+            <img src="images/logo.png">
+            <p>Linkedin &#169; 2023. All rights reserved</p>
+          </div>
         </div>
       </div>
     </div>
+
+    <script>
+      let profileMenu = document.getElementById("profileMenu");
+
+      function toggleMenu() {
+        profileMenu.classList.toggle("open-menu")        
+      }
+
+      let sideActivity = document.getElementById("sidebarActivity");
+      let moreLink = document.getElementById("showMoreLink");
+
+      function togglActivity(){
+        sideActivity.classList.toggle("open-activity");
+
+        if(sideActivity.classList.contains("open-activity")){
+          moreLink.innerHTML = "Show less <b>-</b>";
+        }
+        else{
+          moreLink.innerHTML = "Show more <b>+</b>";
+        }
+      }
+
+    </script>
   </body>
 </html>
